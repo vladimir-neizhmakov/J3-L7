@@ -43,4 +43,5 @@ public class ProductController {
 
     @GetMapping("/delete/{id}")
     public void deleteById(@PathVariable long id){productService.deleteById(id);}
+
 }
