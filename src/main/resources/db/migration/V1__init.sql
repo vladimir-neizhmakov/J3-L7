@@ -15,3 +15,10 @@ insert into products (title, cost) values
 ('Sugar', 54.10),
 ('Chocolate', 43.30),
 ('Water', 19.60);
+
+create table basket (
+id bigserial primary key,
+user_id int,
+product_id int,
+created timestamp default current_timestamp,
+deleted timestamp default null);
